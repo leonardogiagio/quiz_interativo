@@ -1,8 +1,7 @@
 # Quiz Interativo
 
 ### Tecnologias
-- Bootstrap
-- Javascript
+[![My Skills](https://skillicons.dev/icons?i=bootstrap,js)](https://skillicons.dev)
 
 ### Funcionalidades
 

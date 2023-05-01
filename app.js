@@ -6,7 +6,6 @@ const scoreResult = document.querySelector('span')
 let score = 0
 
 const getUserAnswers = () => {
-    // pegando respostas
     let userAnswers = []
 
     correctAnswers.forEach((_, index) => {
@@ -21,9 +20,16 @@ const calculateScore = userAnswers => {
 
     userAnswers.forEach((userAnswers, index) => {
         const isUserAnswerCorrect = userAnswers === correctAnswers[index]
+        const divParentInputAnswers = form[`inputQuestion${index+1}`][index].parentElement.parentElement.parentElement
         if (isUserAnswerCorrect) {
+            divParentInputAnswers.classList.remove('border-red')
+            divParentInputAnswers.classList.add('border-green')
             score += 25
+        } else {
+            divParentInputAnswers.classList.remove('border-green')
+            divParentInputAnswers.classList.add('border-red')
         }
+
     })
 }
 

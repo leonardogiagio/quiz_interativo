@@ -1,0 +1,13 @@
+.border-green,
+.border-red {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.border-green {
+    border: 1px solid #29dd41;
+}
+
+.border-red {
+    border: 1px solid #dd250d;
+}
